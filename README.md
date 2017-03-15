@@ -8,8 +8,6 @@ OSX Window Manager
 	Windah is a window manager for OS X. It allows you to position the primary window (window in focus) using key bindings.
 </e></i>
 
-[Download Link](https://github.com/RedHandTech/Windah/releases/download/v.0.1.2/Windah.app.zip)
-
 #### Key Bindings
 
 The key bindings are currently non-customisable and are as follows:
