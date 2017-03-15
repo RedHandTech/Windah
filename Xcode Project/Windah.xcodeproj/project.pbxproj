@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C24C82E81D50FFD1001D5D19 /* RHWindowLocationDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24C82E71D50FFD1001D5D19 /* RHWindowLocationDetector.swift */; };
+		C2541B551D4A03D60050C5F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2541B541D4A03D60050C5F3 /* AppDelegate.swift */; };
+		C2541B571D4A03D60050C5F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2541B561D4A03D60050C5F3 /* Assets.xcassets */; };
+		C2541B5A1D4A03D60050C5F3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2541B581D4A03D60050C5F3 /* MainMenu.xib */; };
+		C2541B721D4A07BD0050C5F3 /* RHIconActionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2541B711D4A07BD0050C5F3 /* RHIconActionHandler.swift */; };
+		C2541B741D4A0BCD0050C5F3 /* RHKeyCaptureHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2541B731D4A0BCD0050C5F3 /* RHKeyCaptureHandler.swift */; };
+		C283450D1D4B4DF100D0B947 /* get_window_bounds.txt in Resources */ = {isa = PBXBuildFile; fileRef = C283450C1D4B4DF100D0B947 /* get_window_bounds.txt */; };
+		C283450F1D4B4E1200D0B947 /* RHAppleScriptRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C283450E1D4B4E1200D0B947 /* RHAppleScriptRunner.swift */; };
+		C28345111D4B5F9C00D0B947 /* set_window_position.txt in Resources */ = {isa = PBXBuildFile; fileRef = C28345101D4B5F9C00D0B947 /* set_window_position.txt */; };
+		C2DA19571D51E31500F5ED7C /* RHWindowLocationDetector_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DA19561D51E31500F5ED7C /* RHWindowLocationDetector_Spec.swift */; };
+		C2DA19581D51E32000F5ED7C /* RHKeyCaptureHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2541B731D4A0BCD0050C5F3 /* RHKeyCaptureHandler.swift */; };
+		C2DA19591D51E39100F5ED7C /* RHAppleScriptRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C283450E1D4B4E1200D0B947 /* RHAppleScriptRunner.swift */; };
+		C2DA195A1D51E3FF00F5ED7C /* RHWindowLocationDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24C82E71D50FFD1001D5D19 /* RHWindowLocationDetector.swift */; };
+		C2DA195B1D51E40800F5ED7C /* RHIconActionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2541B711D4A07BD0050C5F3 /* RHIconActionHandler.swift */; };
+		C2DA195C1D51E40B00F5ED7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2541B541D4A03D60050C5F3 /* AppDelegate.swift */; };
+		C2DA195E1D51F23C00F5ED7C /* RHWindowState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DA195D1D51F23C00F5ED7C /* RHWindowState.swift */; };
+		C2DA195F1D51F23E00F5ED7C /* RHWindowState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DA195D1D51F23C00F5ED7C /* RHWindowState.swift */; };
+		C2EBDD7E1D4F977F00A6C88A /* set_window_size.txt in Resources */ = {isa = PBXBuildFile; fileRef = C2EBDD7D1D4F977F00A6C88A /* set_window_size.txt */; };
+		C2EBDD801D4F994000A6C88A /* hide_window.txt in Resources */ = {isa = PBXBuildFile; fileRef = C2EBDD7F1D4F994000A6C88A /* hide_window.txt */; };
+		D4D10ED71E2AC15800D9A0A1 /* RHOptionPanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D10ED61E2AC15800D9A0A1 /* RHOptionPanelViewController.swift */; };
+		D4D10ED91E2AC18B00D9A0A1 /* RHOptionPanelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D10ED81E2AC18B00D9A0A1 /* RHOptionPanelViewModel.swift */; };
+		D4D10EE01E2AC2A000D9A0A1 /* Chaining.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D10EDB1E2AC2A000D9A0A1 /* Chaining.swift */; };
+		D4D10EE11E2AC2A000D9A0A1 /* Filterer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D10EDC1E2AC2A000D9A0A1 /* Filterer.swift */; };
+		D4D10EE21E2AC2A000D9A0A1 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D10EDD1E2AC2A000D9A0A1 /* Mapper.swift */; };
+		D4D10EE31E2AC2A000D9A0A1 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D10EDE1E2AC2A000D9A0A1 /* Observer.swift */; };
+		D4D10EE41E2AC2A000D9A0A1 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D10EDF1E2AC2A000D9A0A1 /* Value.swift */; };
+		D4D10EEC1E2AC6B300D9A0A1 /* OptionPanel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4D10EEB1E2AC6B300D9A0A1 /* OptionPanel.storyboard */; };
+		D4D10EEE1E2AC87400D9A0A1 /* RHOptionPanelWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D10EED1E2AC87400D9A0A1 /* RHOptionPanelWindowController.swift */; };
+		D4D10EF11E2ACA8700D9A0A1 /* RHDraggableWindown.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D10EF01E2ACA8700D9A0A1 /* RHDraggableWindown.swift */; };
+		D4D10EF61E2AD0E600D9A0A1 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D10EF51E2AD0E600D9A0A1 /* Math.swift */; };
+		D4D10EF81E2AD22000D9A0A1 /* Math_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D10EF71E2AD22000D9A0A1 /* Math_Spec.swift */; };
+		D4D10EF91E2AD22300D9A0A1 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D10EF51E2AD0E600D9A0A1 /* Math.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C2541B611D4A03D60050C5F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2541B491D4A03D60050C5F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2541B501D4A03D60050C5F3;
+			remoteInfo = Windah;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C24C82E71D50FFD1001D5D19 /* RHWindowLocationDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHWindowLocationDetector.swift; sourceTree = "<group>"; };
+		C2541B511D4A03D60050C5F3 /* Windah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Windah.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2541B541D4A03D60050C5F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C2541B561D4A03D60050C5F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C2541B591D4A03D60050C5F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C2541B5B1D4A03D60050C5F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2541B601D4A03D60050C5F3 /* WindahTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WindahTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2541B661D4A03D60050C5F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2541B711D4A07BD0050C5F3 /* RHIconActionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHIconActionHandler.swift; sourceTree = "<group>"; };
+		C2541B731D4A0BCD0050C5F3 /* RHKeyCaptureHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHKeyCaptureHandler.swift; sourceTree = "<group>"; };
+		C283450C1D4B4DF100D0B947 /* get_window_bounds.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = get_window_bounds.txt; sourceTree = "<group>"; };
+		C283450E1D4B4E1200D0B947 /* RHAppleScriptRunner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHAppleScriptRunner.swift; sourceTree = "<group>"; };
+		C28345101D4B5F9C00D0B947 /* set_window_position.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = set_window_position.txt; sourceTree = "<group>"; };
+		C2DA19551D51E31500F5ED7C /* WindahTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WindahTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		C2DA19561D51E31500F5ED7C /* RHWindowLocationDetector_Spec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHWindowLocationDetector_Spec.swift; sourceTree = "<group>"; };
+		C2DA195D1D51F23C00F5ED7C /* RHWindowState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHWindowState.swift; sourceTree = "<group>"; };
+		C2EBDD7D1D4F977F00A6C88A /* set_window_size.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = set_window_size.txt; sourceTree = "<group>"; };
+		C2EBDD7F1D4F994000A6C88A /* hide_window.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hide_window.txt; sourceTree = "<group>"; };
+		D4D10ED61E2AC15800D9A0A1 /* RHOptionPanelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHOptionPanelViewController.swift; sourceTree = "<group>"; };
+		D4D10ED81E2AC18B00D9A0A1 /* RHOptionPanelViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHOptionPanelViewModel.swift; sourceTree = "<group>"; };
+		D4D10EDB1E2AC2A000D9A0A1 /* Chaining.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chaining.swift; sourceTree = "<group>"; };
+		D4D10EDC1E2AC2A000D9A0A1 /* Filterer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filterer.swift; sourceTree = "<group>"; };
+		D4D10EDD1E2AC2A000D9A0A1 /* Mapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
+		D4D10EDE1E2AC2A000D9A0A1 /* Observer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
+		D4D10EDF1E2AC2A000D9A0A1 /* Value.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Value.swift; sourceTree = "<group>"; };
+		D4D10EEB1E2AC6B300D9A0A1 /* OptionPanel.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OptionPanel.storyboard; sourceTree = "<group>"; };
+		D4D10EED1E2AC87400D9A0A1 /* RHOptionPanelWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHOptionPanelWindowController.swift; sourceTree = "<group>"; };
+		D4D10EF01E2ACA8700D9A0A1 /* RHDraggableWindown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHDraggableWindown.swift; sourceTree = "<group>"; };
+		D4D10EF51E2AD0E600D9A0A1 /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+		D4D10EF71E2AD22000D9A0A1 /* Math_Spec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math_Spec.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2541B4E1D4A03D60050C5F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2541B5D1D4A03D60050C5F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C2541B481D4A03D60050C5F3 = {
+			isa = PBXGroup;
+			children = (
+				C2541B531D4A03D60050C5F3 /* Windah */,
+				C2541B631D4A03D60050C5F3 /* WindahTests */,
+				C2541B521D4A03D60050C5F3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C2541B521D4A03D60050C5F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2541B511D4A03D60050C5F3 /* Windah.app */,
+				C2541B601D4A03D60050C5F3 /* WindahTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2541B531D4A03D60050C5F3 /* Windah */ = {
+			isa = PBXGroup;
+			children = (
+				D4D10EF21E2ACC6400D9A0A1 /* Utils */,
+				D4D10EDA1E2AC28D00D9A0A1 /* Swift Observation */,
+				D4D10EEF1E2ACA7600D9A0A1 /* UI */,
+				D4D10ED31E2AC0E400D9A0A1 /* Option Panel */,
+				D4D10EE51E2AC57E00D9A0A1 /* Actions */,
+				D4D10EE61E2AC58E00D9A0A1 /* Window Manipulation */,
+				C2541B541D4A03D60050C5F3 /* AppDelegate.swift */,
+				C2541B711D4A07BD0050C5F3 /* RHIconActionHandler.swift */,
+				C2541B561D4A03D60050C5F3 /* Assets.xcassets */,
+				C2541B581D4A03D60050C5F3 /* MainMenu.xib */,
+				C2541B5B1D4A03D60050C5F3 /* Info.plist */,
+				C283450B1D4B4BC400D0B947 /* Apple Scripts */,
+			);
+			path = Windah;
+			sourceTree = "<group>";
+		};
+		C2541B631D4A03D60050C5F3 /* WindahTests */ = {
+			isa = PBXGroup;
+			children = (
+				C2DA19551D51E31500F5ED7C /* WindahTests-Bridging-Header.h */,
+				C2541B661D4A03D60050C5F3 /* Info.plist */,
+				C2DA19561D51E31500F5ED7C /* RHWindowLocationDetector_Spec.swift */,
+				D4D10EF71E2AD22000D9A0A1 /* Math_Spec.swift */,
+			);
+			path = WindahTests;
+			sourceTree = "<group>";
+		};
+		C283450B1D4B4BC400D0B947 /* Apple Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				C283450C1D4B4DF100D0B947 /* get_window_bounds.txt */,
+				C28345101D4B5F9C00D0B947 /* set_window_position.txt */,
+				C2EBDD7D1D4F977F00A6C88A /* set_window_size.txt */,
+				C2EBDD7F1D4F994000A6C88A /* hide_window.txt */,
+			);
+			name = "Apple Scripts";
+			sourceTree = "<group>";
+		};
+		D4D10ED31E2AC0E400D9A0A1 /* Option Panel */ = {
+			isa = PBXGroup;
+			children = (
+				D4D10EED1E2AC87400D9A0A1 /* RHOptionPanelWindowController.swift */,
+				D4D10ED81E2AC18B00D9A0A1 /* RHOptionPanelViewModel.swift */,
+				D4D10ED61E2AC15800D9A0A1 /* RHOptionPanelViewController.swift */,
+				D4D10EEB1E2AC6B300D9A0A1 /* OptionPanel.storyboard */,
+			);
+			name = "Option Panel";
+			sourceTree = "<group>";
+		};
+		D4D10EDA1E2AC28D00D9A0A1 /* Swift Observation */ = {
+			isa = PBXGroup;
+			children = (
+				D4D10EDB1E2AC2A000D9A0A1 /* Chaining.swift */,
+				D4D10EDC1E2AC2A000D9A0A1 /* Filterer.swift */,
+				D4D10EDD1E2AC2A000D9A0A1 /* Mapper.swift */,
+				D4D10EDE1E2AC2A000D9A0A1 /* Observer.swift */,
+				D4D10EDF1E2AC2A000D9A0A1 /* Value.swift */,
+			);
+			name = "Swift Observation";
+			sourceTree = "<group>";
+		};
+		D4D10EE51E2AC57E00D9A0A1 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				C2541B731D4A0BCD0050C5F3 /* RHKeyCaptureHandler.swift */,
+			);
+			name = Actions;
+			sourceTree = "<group>";
+		};
+		D4D10EE61E2AC58E00D9A0A1 /* Window Manipulation */ = {
+			isa = PBXGroup;
+			children = (
+				C24C82E71D50FFD1001D5D19 /* RHWindowLocationDetector.swift */,
+				C283450E1D4B4E1200D0B947 /* RHAppleScriptRunner.swift */,
+				C2DA195D1D51F23C00F5ED7C /* RHWindowState.swift */,
+			);
+			name = "Window Manipulation";
+			sourceTree = "<group>";
+		};
+		D4D10EEF1E2ACA7600D9A0A1 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D4D10EF01E2ACA8700D9A0A1 /* RHDraggableWindown.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		D4D10EF21E2ACC6400D9A0A1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D4D10EF51E2AD0E600D9A0A1 /* Math.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C2541B501D4A03D60050C5F3 /* Windah */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2541B691D4A03D60050C5F3 /* Build configuration list for PBXNativeTarget "Windah" */;
+			buildPhases = (
+				C2541B4D1D4A03D60050C5F3 /* Sources */,
+				C2541B4E1D4A03D60050C5F3 /* Frameworks */,
+				C2541B4F1D4A03D60050C5F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Windah;
+			productName = Windah;
+			productReference = C2541B511D4A03D60050C5F3 /* Windah.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C2541B5F1D4A03D60050C5F3 /* WindahTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2541B6C1D4A03D60050C5F3 /* Build configuration list for PBXNativeTarget "WindahTests" */;
+			buildPhases = (
+				C2541B5C1D4A03D60050C5F3 /* Sources */,
+				C2541B5D1D4A03D60050C5F3 /* Frameworks */,
+				C2541B5E1D4A03D60050C5F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2541B621D4A03D60050C5F3 /* PBXTargetDependency */,
+			);
+			name = WindahTests;
+			productName = WindahTests;
+			productReference = C2541B601D4A03D60050C5F3 /* WindahTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2541B491D4A03D60050C5F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Red Hand Technologies";
+				TargetAttributes = {
+					C2541B501D4A03D60050C5F3 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 7DDX24S6TZ;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+					C2541B5F1D4A03D60050C5F3 = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
+						TestTargetID = C2541B501D4A03D60050C5F3;
+					};
+				};
+			};
+			buildConfigurationList = C2541B4C1D4A03D60050C5F3 /* Build configuration list for PBXProject "Windah" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C2541B481D4A03D60050C5F3;
+			productRefGroup = C2541B521D4A03D60050C5F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2541B501D4A03D60050C5F3 /* Windah */,
+				C2541B5F1D4A03D60050C5F3 /* WindahTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C2541B4F1D4A03D60050C5F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2541B571D4A03D60050C5F3 /* Assets.xcassets in Resources */,
+				C283450D1D4B4DF100D0B947 /* get_window_bounds.txt in Resources */,
+				C28345111D4B5F9C00D0B947 /* set_window_position.txt in Resources */,
+				D4D10EEC1E2AC6B300D9A0A1 /* OptionPanel.storyboard in Resources */,
+				C2EBDD801D4F994000A6C88A /* hide_window.txt in Resources */,
+				C2EBDD7E1D4F977F00A6C88A /* set_window_size.txt in Resources */,
+				C2541B5A1D4A03D60050C5F3 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2541B5E1D4A03D60050C5F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C2541B4D1D4A03D60050C5F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2541B551D4A03D60050C5F3 /* AppDelegate.swift in Sources */,
+				D4D10EE31E2AC2A000D9A0A1 /* Observer.swift in Sources */,
+				C2DA195E1D51F23C00F5ED7C /* RHWindowState.swift in Sources */,
+				C2541B741D4A0BCD0050C5F3 /* RHKeyCaptureHandler.swift in Sources */,
+				D4D10EE01E2AC2A000D9A0A1 /* Chaining.swift in Sources */,
+				D4D10EEE1E2AC87400D9A0A1 /* RHOptionPanelWindowController.swift in Sources */,
+				D4D10EE21E2AC2A000D9A0A1 /* Mapper.swift in Sources */,
+				D4D10EF11E2ACA8700D9A0A1 /* RHDraggableWindown.swift in Sources */,
+				D4D10EE11E2AC2A000D9A0A1 /* Filterer.swift in Sources */,
+				C2541B721D4A07BD0050C5F3 /* RHIconActionHandler.swift in Sources */,
+				C283450F1D4B4E1200D0B947 /* RHAppleScriptRunner.swift in Sources */,
+				C24C82E81D50FFD1001D5D19 /* RHWindowLocationDetector.swift in Sources */,
+				D4D10ED91E2AC18B00D9A0A1 /* RHOptionPanelViewModel.swift in Sources */,
+				D4D10ED71E2AC15800D9A0A1 /* RHOptionPanelViewController.swift in Sources */,
+				D4D10EE41E2AC2A000D9A0A1 /* Value.swift in Sources */,
+				D4D10EF61E2AD0E600D9A0A1 /* Math.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2541B5C1D4A03D60050C5F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2DA195C1D51E40B00F5ED7C /* AppDelegate.swift in Sources */,
+				C2DA19571D51E31500F5ED7C /* RHWindowLocationDetector_Spec.swift in Sources */,
+				D4D10EF91E2AD22300D9A0A1 /* Math.swift in Sources */,
+				C2DA195F1D51F23E00F5ED7C /* RHWindowState.swift in Sources */,
+				C2DA195B1D51E40800F5ED7C /* RHIconActionHandler.swift in Sources */,
+				C2DA19581D51E32000F5ED7C /* RHKeyCaptureHandler.swift in Sources */,
+				C2DA195A1D51E3FF00F5ED7C /* RHWindowLocationDetector.swift in Sources */,
+				D4D10EF81E2AD22000D9A0A1 /* Math_Spec.swift in Sources */,
+				C2DA19591D51E39100F5ED7C /* RHAppleScriptRunner.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C2541B621D4A03D60050C5F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2541B501D4A03D60050C5F3 /* Windah */;
+			targetProxy = C2541B611D4A03D60050C5F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C2541B581D4A03D60050C5F3 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2541B591D4A03D60050C5F3 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C2541B671D4A03D60050C5F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C2541B681D4A03D60050C5F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		C2541B6A1D4A03D60050C5F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7DDX24S6TZ;
+				INFOPLIST_FILE = Windah/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RHT.Windah;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C2541B6B1D4A03D60050C5F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7DDX24S6TZ;
+				INFOPLIST_FILE = Windah/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RHT.Windah;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C2541B6D1D4A03D60050C5F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WindahTests",
+				);
+				INFOPLIST_FILE = WindahTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RHT.WindahTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WindahTests/WindahTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Windah.app/Contents/MacOS/Windah";
+			};
+			name = Debug;
+		};
+		C2541B6E1D4A03D60050C5F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WindahTests",
+				);
+				INFOPLIST_FILE = WindahTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RHT.WindahTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WindahTests/WindahTests-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Windah.app/Contents/MacOS/Windah";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C2541B4C1D4A03D60050C5F3 /* Build configuration list for PBXProject "Windah" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2541B671D4A03D60050C5F3 /* Debug */,
+				C2541B681D4A03D60050C5F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2541B691D4A03D60050C5F3 /* Build configuration list for PBXNativeTarget "Windah" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2541B6A1D4A03D60050C5F3 /* Debug */,
+				C2541B6B1D4A03D60050C5F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2541B6C1D4A03D60050C5F3 /* Build configuration list for PBXNativeTarget "WindahTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2541B6D1D4A03D60050C5F3 /* Debug */,
+				C2541B6E1D4A03D60050C5F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C2541B491D4A03D60050C5F3 /* Project object */;
+}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="R40-n2-9ku">
+            <objects>
+                <windowController storyboardIdentifier="OptionWindowController" id="2rW-dv-Q5I" customClass="RHOptionPanelWindowController" customModule="Windah" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="cQl-WV-MSe" customClass="RHDraggableWindow" customModule="Windah" customModuleProvider="target">
+                        <windowStyleMask key="styleMask" closable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="196" y="240" width="400" height="400"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+                        <value key="minSize" type="size" width="400" height="400"/>
+                        <value key="maxSize" type="size" width="400" height="400"/>
+                    </window>
+                    <connections>
+                        <segue destination="ssq-71-pvJ" kind="relationship" relationship="window.shadowedContentViewController" id="vcq-NY-GPa"/>
+                    </connections>
+                </windowController>
+                <customObject id="up8-lx-vCK" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-277" y="1"/>
+        </scene>
+        <!--Option Panel View Controller-->
+        <scene sceneID="aA9-nB-Lda">
+            <objects>
+                <viewController id="ssq-71-pvJ" customClass="RHOptionPanelViewController" customModule="Windah" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="egi-Te-jHN">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HEE-lU-utA">
+                                <rect key="frame" x="45" y="336" width="310" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="8BE-NC-BJG">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" white="1" alpha="0.5" colorSpace="deviceWhite"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                    </view>
+                </viewController>
+                <customObject id="vcl-KQ-Rme" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-277" y="573"/>
+        </scene>
+    </scenes>
+</document>

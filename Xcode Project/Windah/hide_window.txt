@@ -1,0 +1,9 @@
+global frontApp, frontAppName
+
+tell application "System Events"
+    set frontApp to first application process whose frontmost is true
+    set frontAppName to name of frontApp
+    tell process frontAppName
+        set visible to false
+    end tell
+end tell
